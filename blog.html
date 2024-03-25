@@ -8,13 +8,14 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
-            html {
-            position: relative;
-            min-height: 100%;
-        }
+    html {
+        position: relative;
+        min-height: 100%;
+    }
 
-        body {
-            margin-bottom: 60px; /* Height of the footer */
+    body {
+        margin-bottom: 60px; /* Height of the footer */
+        background: #e0e6d9;
         }
 
         .footer {
@@ -25,6 +26,15 @@
             background-color: #f5f5f5;
             padding-top: 20px;
         }
+        .blog-post {
+        background-color: #dae0d1; /* Set background color to white */
+        padding: 20px; /* Add some padding for better readability */
+        margin-bottom: 20px; /* Add some margin between blog posts */
+        border-radius: 5px; /* Add border-radius for rounded corners */
+    }
+    .border.rounded {
+        background-color: #dae0d1; /* Set background color to white */
+    }
 </style>
 </head>
 <body>
@@ -64,11 +74,99 @@
             </div>
           </nav>
     </header>
-    <main class="my-5">
-        <div class="container">
-
+    <main class="container">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-0">Fluffy Chicks!</h3>
+                <div class="mb-1 text-muted">March 25</div>
+                <p class="card-text mb-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Alias sapiente nihil quaerat rem quos itaque sed..</p>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="images/polish-chicken-6366614_1280.jpg" alt="Your Image Description" width="200" height="250">
+      
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-0">Colorful Chickens</h3>
+                <div class="mb-1 text-muted">March 15</div>
+                <p class="mb-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Alias sapiente nihil quaerat rem quos itaque sed..</p>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="images/chicken-2094115_1280.jpg" alt="Your Image Description" width="200" height="250">
+      
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
+      
+        <div class="row g-5">
+          <div class="col-md-8">
+      
+
+            <article class="blog-post">
+              <h2 class="blog-post-title">Blog post 1</h2>
+              <p class="blog-post-meta">December 23, 2020</p>
+      
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi veniam nesciunt aspernatur saepe, minima, provident ullam hic dolore quae voluptatibus vitae quia facere odit reiciendis sapiente, illo laudantium alias magni..</p>
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi veniam nesciunt aspernatur saepe, minima <strong>look at me</strong> Lorem ipsum dolor sit ameticing elit.</p>
+              </blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi veniam nesciunt aspernatur saepe, minima, provident ullam hic dolore quae voluptatibus vitae quia facere odit reiciendis sapiente, illo laudantium alias magni..</p>
+      
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi veniam nesciunt aspernatur saepe, minima, provident ullam hic dolore quae voluptatibus vitae.</p>
+            </article>
+      
+            <article class="blog-post">
+              <h2 class="blog-post-title">Blog post 2</h2>
+              <p class="blog-post-meta">December 14, 2020</p>
+      
+              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+              <ul>
+                <li>First list item</li>
+                <li>Second list item with a longer description</li>
+                <li>Third list item to close it out</li>
+              </ul>
+              <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+            </article>
+      
+          </div>
+      
+          <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+              <div class="p-4 mb-3 ">
+                <h4 class="fst-italic">About</h4>
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Mollitia natus porro eveniet magnam nulla sit omnis! Iusto, libero sunt, 
+                    magni et numquam eligendi excepturi magnam quia nam, vel maxime optio!.</p>
+              </div>
+      
+              <div class="p-4">
+                <h4 class="fst-italic">List of blogs</h4>
+                <ol class="list-unstyled mb-0">
+                  <li><a href="#">Blog 1</a></li>
+                  <li><a href="#">Blog 2</a></li>
+                  <li><a href="#">Blog 3</a></li>
+                  <li><a href="#">Blog 4</a></li>
+                  <li><a href="#">Blog 5</a></li>
+                  <li><a href="#">Blog 6</a></li>
+                  <li><a href="#">Blog 7</a></li>
+                </ol>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      
+      </main>      
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
             <span class="text-muted">
