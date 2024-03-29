@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -26,12 +26,38 @@
             background-color: #f5f5f5;
             padding-top: 20px;
         }
+        .my-5 {
+            background-color: #dae0d1;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .navbar-brand,
+      .navbar-nav {
+          flex-grow: 1;
+          text-align: center;
+      }
+      main {
+            font-family: Arial, sans-serif; /* Change the font family */
+            color: #333; /* Change the text color */
+        }
+
+        /* Example of targeting specific elements within <main> */
+        main h2 {
+            color: #4b5c1d; /* Change the color of <h2> headings */
+        }
+
+
+
+
 </style>
+<!-- Toodete müügivaates on nimekiri tooteid, kus igal tootel on heroimage, pealkiri ja hind. -->
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Happy Chicken Farm</a>
+            <a style="color: #4b5c1d;" class="navbar-brand" href="#">Happy Chicken Farm</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -67,18 +93,96 @@
     </header>
     <main class="my-5">
         <div class="container">
-
+            <h2 class="text-center mb-4">Our Products</h2>
+            <ul class="list-unstyled row">
+                <li class="col-md-4 mb-4">
+                    <div class="p-5 text-center bg-image rounded-3" style="
+                        background-image: url('images/1000_F_205951292_Grw3fa2P4h7oCDgrXJJVkzIhzHHRj60q.jpg');
+                        height: 300px;
+                        position: relative;
+                        background-size: cover;
+                        background-position: center;">
+                        <div class="mask" style="
+                            background-color: rgba(0, 0, 0, 0.6);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        ">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="text-white">
+                                    <h3 class="mb-3">Normal Chicken Eggs</h3>
+                                    <p class="mb-3">Price: 2€</p>
+                                    <a class="btn btn-outline-light btn-lg" href="underconstruction.html" role="button">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-4 mb-4">
+                    <div class="p-5 text-center bg-image rounded-3" style="
+                        background-image: url('images/271055_00_2x.jpg');
+                        height: 300px;
+                        position: relative;
+                        background-size: cover;
+                        background-position: center;">
+                        <div class="mask" style="
+                            background-color: rgba(0, 0, 0, 0.6);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        ">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="text-white">
+                                    <h3 class="mb-3">Colorful Eggs</h3>
+                                    <p class="mb-3">Price: 5€</p>
+                                    <a class="btn btn-outline-light btn-lg" href="underconstruction.html" role="button">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-4 mb-4">
+                    <div class="p-5 text-center bg-image rounded-3" style="
+                        background-image: url('images/istockphoto-517469332-1024x1024.jpg');
+                        height: 300px;
+                        position: relative;
+                        background-size: cover;
+                        background-position: center;">
+                        <div class="mask" style="
+                            background-color: rgba(0, 0, 0, 0.6);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        ">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="text-white">
+                                    <h3 class="mb-3">Golden Eggs</h3>
+                                    <p class="mb-3">Price: 20€</p>
+                                    <a class="btn btn-outline-light btn-lg" href="underconstruction.html" role="button">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </main>
     <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <span class="text-muted">
-                <a href="copyrights.html">&copy;Copyrights</a>
-                <div class="vr vr-blurry" style="height: 10px;"></div>
-                <a href="privacyPolicy.html">Privacy Policy</a>
-            </span>
-        </div>
-    </footer>
+      <div class="container text-center">
+          <span class="text-muted">
+              <a style="text-decoration:none" href="copyrights.html">&copy; Copyrights</a>
+              <div class="vr vr-blurry" style="height: 10px;"></div>
+              <a style="text-decoration:none" href="privacyPolicy.html">Privacy Policy</a>
+          </span>
+      </div>
+  </footer>
+  
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   

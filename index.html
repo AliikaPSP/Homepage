@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -11,33 +11,58 @@
 </head>
 <style>
 
-      html {
-            position: relative;
-            min-height: 100%;
-        }
+  html {
+        position: relative;
+        min-height: 100%;
+    }
 
-        body {
-            margin-bottom: 60px; /* Height of the footer */
-            background: #e0e6d9;
-        }
-        .carousel-caption {
+    body {
+        margin-bottom: 60px; /* Height of the footer */
+        background: #e0e6d9;
+    }
+    .carousel-caption {
         background-color: rgba(84, 81, 81, 0.7);
         color: white;
       }
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 60px; /* Height of the footer */
-            background-color: #f5f5f5;
-            padding-top: 20px;
-        }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px; /* Height of the footer */
+        background-color: #f5f5f5;
+        padding-top: 20px;
+    }
+    .carousel-item {
+      animation: fadeIn 1s ease-in-out ; 
+      border-radius: 10px;
+      overflow: hidden; 
+      transition: border-radius 0.5s ease;
+    }
+
+    .carousel-caption {
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .carousel-item img {
+    border-radius: 10px;
+    }
+        
+    .navbar-brand,
+      .navbar-nav {
+          flex-grow: 1;
+          text-align: center;
+      }
 
 </style>
   <body>
       <header>
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">Happy Chicken Farm</a>
+              <a style="color: #4b5c1d;" class="navbar-brand" href="#">Happy Chicken Farm</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -126,14 +151,15 @@
       </div>
       </main>
       <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
+        <div class="container text-center">
             <span class="text-muted">
-                <a href="copyrights.html">&copy;Copyrights</a>
+                <a style="text-decoration:none" href="copyrights.html">&copy; Copyrights</a>
                 <div class="vr vr-blurry" style="height: 10px;"></div>
-                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a style="text-decoration:none" href="privacyPolicy.html">Privacy Policy</a>
             </span>
         </div>
-      </footer>
+    </footer>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

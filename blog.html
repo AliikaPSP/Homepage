@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -12,7 +12,7 @@
         position: relative;
         min-height: 100%;
     }
-
+      
     body {
         margin-bottom: 60px; /* Height of the footer */
         background: #e0e6d9;
@@ -27,20 +27,52 @@
             padding-top: 20px;
         }
         .blog-post {
-        background-color: #dae0d1; /* Set background color to white */
-        padding: 20px; /* Add some padding for better readability */
-        margin-bottom: 20px; /* Add some margin between blog posts */
-        border-radius: 5px; /* Add border-radius for rounded corners */
-    }
-    .border.rounded {
-        background-color: #dae0d1; /* Set background color to white */
-    }
+            background-color: #dae0d1;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .beround {
+            background-color: #dae0d1;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .navbar-brand,
+      .navbar-nav {
+          flex-grow: 1;
+          text-align: center;
+      }
+      main {
+            font-family: Arial, sans-serif; /* Change the font family */
+            color: #333; /* Change the text color */
+        }
+
+        /* Example of targeting specific elements within <main> */
+        main h2 {
+            color: #4b5c1d; /* Change the color of <h2> headings */
+        }
+
+        main h3 {
+          color: #4b5c1d;
+        }
+
+        main h4 {
+          color: #4b5c1d;
+        }
+        main p {
+            font-size: 16px; /* Change the font size of paragraphs */
+        }
+    
 </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Happy Chicken Farm</a>
+            <a style="color: #4b5c1d;" class="navbar-brand" href="#">Happy Chicken Farm</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -77,32 +109,34 @@
     <main class="container">
         <div class="row mb-2">
           <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <h3 class="mb-0">Fluffy Chicks!</h3>
-                <div class="mb-1 text-muted">March 25</div>
-                <p class="card-text mb-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Alias sapiente nihil quaerat rem quos itaque sed..</p>
-                <a href="#" class="stretched-link">Continue reading</a>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-                <img src="images/polish-chicken-6366614_1280.jpg" alt="Your Image Description" width="200" height="250">
-      
+            <div class="beround">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Fluffy Chicks!</h3>
+                  <div class="mb-1 text-muted">March 25</div>
+                  <p class="card-text mb-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                      Alias sapiente nihil quaerat rem quos itaque sed..</p>
+                  <a style="text-decoration:none" href="underconstruction.html" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img src="images/polish-chicken-6366614_1280.jpg" alt="Your Image Description" width="200" height="250">
+            </div>
               </div>
             </div>
           </div>
           <div class="col-md-6">
+            <div class="beround">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div class="col p-4 d-flex flex-column position-static">
                 <h3 class="mb-0">Colorful Chickens</h3>
                 <div class="mb-1 text-muted">March 15</div>
                 <p class="mb-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Alias sapiente nihil quaerat rem quos itaque sed..</p>
-                <a href="#" class="stretched-link">Continue reading</a>
+                <a style="text-decoration:none" href="underconstruction.html" class="stretched-link">Continue reading</a>
               </div>
               <div class="col-auto d-none d-lg-block">
                 <img src="images/chicken-2094115_1280.jpg" alt="Your Image Description" width="200" height="250">
-      
+              </div>
               </div>
             </div>
           </div>
@@ -129,13 +163,13 @@
               <h2 class="blog-post-title">Blog post 2</h2>
               <p class="blog-post-meta">December 14, 2020</p>
       
-              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, est aperiam veritatis explicabo nemo consequatur ullam enim quod et ea error, consectetur magni odit vel tempora! Quo quis corporis alias!.</p>
               <ul>
-                <li>First list item</li>
-                <li>Second list item with a longer description</li>
-                <li>Third list item to close it out</li>
+                <li>First Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor sit, amet consectetur</li>
+                <li>Lorem ipsum dolor sit, amet.</li>
               </ul>
-              <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, est aperiam veritatis explicabo nemo consequatur ullam enim quod et ea error.</p>
             </article>
       
           </div>
@@ -144,21 +178,19 @@
             <div class="position-sticky" style="top: 2rem;">
               <div class="p-4 mb-3 ">
                 <h4 class="fst-italic">About</h4>
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Mollitia natus porro eveniet magnam nulla sit omnis! Iusto, libero sunt, 
-                    magni et numquam eligendi excepturi magnam quia nam, vel maxime optio!.</p>
+                <p class="mb-0">Learn more about Happy Chicken Farm and our commitment to sustainable farming practices.</p>
               </div>
       
               <div class="p-4">
                 <h4 class="fst-italic">List of blogs</h4>
                 <ol class="list-unstyled mb-0">
-                  <li><a href="#">Blog 1</a></li>
-                  <li><a href="#">Blog 2</a></li>
-                  <li><a href="#">Blog 3</a></li>
-                  <li><a href="#">Blog 4</a></li>
-                  <li><a href="#">Blog 5</a></li>
-                  <li><a href="#">Blog 6</a></li>
-                  <li><a href="#">Blog 7</a></li>
+                  <li><a style="text-decoration:none" href="underconstruction.html">Blog 1</a></li>
+                  <li><a style="text-decoration:none" href="underconstruction.html">Blog 2</a></li>
+                  <li><a style="text-decoration:none" href="underconstruction.html">Blog 3</a></li>
+                  <li><a style="text-decoration:none" href="underconstruction.html">Blog 4</a></li>
+                  <li><a style="text-decoration:none" href="underconstruction.html">Blog 5</a></li>
+                  <li><a style="text-decoration:none" href="underconstruction.html">Blog 6</a></li>
+                  <li><a style="text-decoration:none" href="underconstruction.html">Blog 7</a></li>
                 </ol>
               </div>
       
@@ -166,15 +198,18 @@
           </div>
         </div>
       
-      </main>      
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <span class="text-muted">
-                <a href="copyrights.html">&copy;Copyrights</a>
-                <div class="vr vr-blurry" style="height: 10px;"></div>
-                <a href="privacyPolicy.html">Privacy Policy</a>
-            </span>
-        </div>
+      </main>
+      <!-- Add the .fixed-bottom class to the <footer> element to pin the Footer to the bottom of the screen. See ka võimalus       -->
+        <footer class="footer mt-auto py-3 bg-light">
+          <div class="container text-center">
+              <span class="text-muted">
+                  <a style="text-decoration:none" href="copyrights.html">&copy; Copyrights</a>
+                  <div class="vr vr-blurry" style="height: 10px;"></div>
+                  <a style="text-decoration:none" href="privacyPolicy.html">Privacy Policy</a>
+              </span>
+          </div>
+      </footer>
+      
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
